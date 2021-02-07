@@ -12,7 +12,9 @@
     <div id="app">
         <h2>{{title}}</h2>
         My name is {{name}} <br/>
-        <input type="text" @keyup="updateName">
+        <!-- v-model binds this <input> to the Vue instance property 'name' -->
+        <input type="text" v-model="name"> <br/>
+        My name is {{name}} <br/>
     </div>
     <script src="app.js"></script>
 </body>
