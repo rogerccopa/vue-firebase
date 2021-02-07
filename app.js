@@ -5,6 +5,8 @@ new Vue({
         name: 'Roger'
     },
     methods: {
-        
+        logEvent(){
+            console.log("Hello world!");
+        }
     }
 })
