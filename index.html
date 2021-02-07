@@ -6,23 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <title>Document</title>
-    <style>
-        .canvas{
-            width: 300px;
-            height: 300px;
-            margin-top: 20px;
-            background: #ddd;
-        }
-    </style>
 </head>
 <body>
     <h1>Vue Basics</h1>
     <div id="app">
         <h2>{{title}}</h2>
-        <button @click="logEvent">Log event</button>
-        <div class="canvas" @mousemove="logCoords">
-            {{coords.x}},{{coords.y}}
-        </div>
+        My name is {{name}} <br/>
+        <input type="text" @keyup="updateName">
     </div>
     <script src="app.js"></script>
 </body>
