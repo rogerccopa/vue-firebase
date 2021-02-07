@@ -1,12 +1,16 @@
 new Vue({
     el:'#app',
     data: {
-        title: 'This is my app title',
-        wage: 10
+        title: 'Becoming a Vue ninja',
+        coords: {x: 0, y: 0}
     },
     methods: {
-        increaseWage: function(amount){
-            this.wage += amount;
+        logEvent(evt){
+            console.log(evt);
+        },
+        logCoords(evt){
+            this.coords.x = evt.offsetX;
+            this.coords.y = evt.offsetY;
         }
     }
 })
