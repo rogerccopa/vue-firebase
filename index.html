@@ -11,9 +11,16 @@
     <h1>Vue Basics</h1>
     <div id="app">
         <h2>{{title}}</h2>
-        <p v-if="showName">Roger Ccopa</p>
-        <p v-else-if="!showName">49 years old</p> <br/>
-        <button @click="toogleShowName">Toggle Name/Age</button>
+        <ul>
+            <li v-for="item in items">{{item}}</li>
+        </ul>
+        <hr>
+        <div v-for="(ninja, index) in ninjas">
+            <p><strong>{{index}} - {{ninja.name}}</strong><br/>
+            Age: {{ninja.age}}<br/>
+            Belt: {{ninja.belt}}
+            </p>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
