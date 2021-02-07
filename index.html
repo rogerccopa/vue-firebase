@@ -11,9 +11,9 @@
     <h1>Vue Basics</h1>
     <div id="app">
         <h2>{{title}}</h2>
-        <button @click.alt="logEvent">Alt-click me</button>
-        <button @click.shift="logEvent">Shift-click me</button> <br/>
-        <a href="https://www.google.com" @click.prevent="logEvent">Google</a>
+        <p v-if="showName">Roger Ccopa</p>
+        <p v-else-if="!showName">49 years old</p> <br/>
+        <button @click="toogleShowName">Toggle Name/Age</button>
     </div>
     <script src="app.js"></script>
 </body>
